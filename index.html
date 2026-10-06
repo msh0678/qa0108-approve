@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="팀장 승인 요청 요약 확인과 확정 금액 입력 화면">
+<!--ethos-data:{"step":true}-->
+<title>팀장 승인 화면</title>
+<link rel="stylesheet" href="./css/style.css">
+<script src="./js/app.js" defer></script>
+</head>
+<body>
+<header>
+<h1>팀장 승인</h1>
+<p>요청 요약을 확인하고 확정 금액을 입력합니다</p>
+</header>
+<main>
+<section class="card" aria-label="요청 요약">
+<h2 id="taskTitle">요청 요약</h2>
+<p class="muted" id="taskDesc">앞 단계에서 넘어온 요청 내용입니다.</p>
+<div class="reqbox" id="reqBox">불러오는 중…</div>
+</section>
+<section class="card" aria-label="확정 금액 입력">
+<h2>확정 금액 입력</h2>
+<form id="fieldForm">
+<div id="fields"></div>
+<p class="msg" id="msg" role="status" aria-live="polite"></p>
+<button type="submit" id="sendBtn">입력 반영</button>
+</form>
+<p class="offline" id="offlineNote" hidden>에토스 워크플로에서 열면 실제 작업이 표시됩니다</p>
+</section>
+</main>
+
+<!--ethos-badge--><div style="text-align:center;padding:16px 8px 20px;font:12px/1.6 -apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;color:#9aa1a9">이 페이지는 <a href="https://ethos.ai.kr" target="_blank" rel="noopener" style="color:#8a919b;text-decoration:underline">에토스AI 코드</a>로 만들어졌습니다</div>
+</body>
+</html>
